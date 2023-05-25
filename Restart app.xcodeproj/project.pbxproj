@@ -14,6 +14,9 @@
 		C7F1F9832A1BC88C008B7E50 /* Restart_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F9822A1BC88C008B7E50 /* Restart_appTests.swift */; };
 		C7F1F98D2A1BC88C008B7E50 /* Restart_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F98C2A1BC88C008B7E50 /* Restart_appUITests.swift */; };
 		C7F1F98F2A1BC88C008B7E50 /* Restart_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F98E2A1BC88C008B7E50 /* Restart_appUITestsLaunchTests.swift */; };
+		C7F1F9A02A1BCC71008B7E50 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F99F2A1BCC71008B7E50 /* OnboardingView.swift */; };
+		C7F1F9A22A1BCC8F008B7E50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F9A12A1BCC8F008B7E50 /* HomeView.swift */; };
+		C7F1F9A42A1BF569008B7E50 /* CirclularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F9A32A1BF569008B7E50 /* CirclularView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		C7F1F9882A1BC88C008B7E50 /* Restart appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Restart appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F1F98C2A1BC88C008B7E50 /* Restart_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restart_appUITests.swift; sourceTree = "<group>"; };
 		C7F1F98E2A1BC88C008B7E50 /* Restart_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restart_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7F1F99E2A1BCBEB008B7E50 /* Restart-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Restart-app-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C7F1F99F2A1BCC71008B7E50 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C7F1F9A12A1BCC8F008B7E50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C7F1F9A32A1BF569008B7E50 /* CirclularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclularView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,11 @@
 		C7F1F9702A1BC88A008B7E50 /* Restart app */ = {
 			isa = PBXGroup;
 			children = (
+				C7F1F99E2A1BCBEB008B7E50 /* Restart-app-Info.plist */,
+				C7F1F99D2A1BCA8B008B7E50 /* Utilities */,
+				C7F1F99C2A1BCA67008B7E50 /* Views */,
 				C7F1F9712A1BC88A008B7E50 /* Restart_appApp.swift */,
-				C7F1F9732A1BC88A008B7E50 /* ContentView.swift */,
+				C7F1F99B2A1BCA55008B7E50 /* Screens */,
 				C7F1F9752A1BC88C008B7E50 /* Assets.xcassets */,
 				C7F1F9772A1BC88C008B7E50 /* Preview Content */,
 			);
@@ -125,6 +135,31 @@
 				C7F1F98E2A1BC88C008B7E50 /* Restart_appUITestsLaunchTests.swift */,
 			);
 			path = "Restart appUITests";
+			sourceTree = "<group>";
+		};
+		C7F1F99B2A1BCA55008B7E50 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C7F1F9732A1BC88A008B7E50 /* ContentView.swift */,
+				C7F1F99F2A1BCC71008B7E50 /* OnboardingView.swift */,
+				C7F1F9A12A1BCC8F008B7E50 /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C7F1F99C2A1BCA67008B7E50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7F1F9A32A1BF569008B7E50 /* CirclularView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7F1F99D2A1BCA8B008B7E50 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F1F9A02A1BCC71008B7E50 /* OnboardingView.swift in Sources */,
+				C7F1F9A42A1BF569008B7E50 /* CirclularView.swift in Sources */,
+				C7F1F9A22A1BCC8F008B7E50 /* HomeView.swift in Sources */,
 				C7F1F9742A1BC88A008B7E50 /* ContentView.swift in Sources */,
 				C7F1F9722A1BC88A008B7E50 /* Restart_appApp.swift in Sources */,
 			);
@@ -345,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -417,13 +455,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Restart app/Preview Content\"";
+				DEVELOPMENT_TEAM = RKQR8LZSYX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Restart-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,13 +484,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Restart app/Preview Content\"";
+				DEVELOPMENT_TEAM = RKQR8LZSYX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Restart-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyond-intelligent.Restart-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,7 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyond-intelligent.Restart-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,6 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyond-intelligent.Restart-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyond-intelligent.Restart-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,7 +589,7 @@
 				C7F1F9912A1BC88C008B7E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C7F1F9922A1BC88C008B7E50 /* Build configuration list for PBXNativeTarget "Restart app" */ = {
 			isa = XCConfigurationList;
@@ -556,7 +598,7 @@
 				C7F1F9942A1BC88C008B7E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C7F1F9952A1BC88C008B7E50 /* Build configuration list for PBXNativeTarget "Restart appTests" */ = {
 			isa = XCConfigurationList;
@@ -565,7 +607,7 @@
 				C7F1F9972A1BC88C008B7E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C7F1F9982A1BC88C008B7E50 /* Build configuration list for PBXNativeTarget "Restart appUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,7 +616,7 @@
 				C7F1F99A2A1BC88C008B7E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
